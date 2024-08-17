@@ -90,9 +90,6 @@ body{
 .mensaje {
     border: none;
     background-color: var(--color-contenedor);
-    background-image: url("/imgs/Muñeco.png");
-    background-repeat: no-repeat;
-    background-position: 50% 15%;
     border-radius: 24px;
     color: var(--color-texto1);
     margin-top: 20px;
@@ -106,6 +103,12 @@ body{
     font-size: 1rem;
 }
 
+.muñeco{
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    bottom: 90%;
+}
 
 .mensaje-disclaimer > h3 {
 font-size: 0.75rem;
@@ -237,6 +240,10 @@ main{
     z-index: 1;
 }
 
+    .muñeco{
+    visibility: hidden;
+}
+
 .mensaje-disclaimer{
     margin-top: 85px;
     margin-bottom: 0;
@@ -291,6 +298,11 @@ main{
         background-image: none;
         z-index: 1;
     }
+
+    .muñeco{
+    visibility: hidden;
+    }
+    
     .mensaje-disclaimer{
         z-index: 2;
     }
